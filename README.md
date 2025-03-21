@@ -6,10 +6,10 @@ This repository contains several implementations of multi-armed bandit (MAB) age
 
 In this project, you will find **four distinct agent types** implemented as part of our exploration of MAB strategies:
 
-1. **KL-UCB Survival Agent (File 1)**
+1. **KL-UCB Survival Agent**
    - **Description:** Uses a KL-divergence based Upper Confidence Bound (UCB) method. The reward is based on survival (i.e., `1 - wicket`), focusing on minimizing dismissals.
   
-2. **Reward-UCB Agents (File 2)**
+2. **Reward-UCB Agents**
    - **Variant 1: Reward-UCB (KL) Agent**
      - **Description:** Computes rewards using an efficiency metric `(1 - p(out)) * avg_runs` and applies a KL-UCB approach.
    - **Variant 2: Reward-UCB (Simple) Agent**
@@ -17,5 +17,5 @@ In this project, you will find **four distinct agent types** implemented as part
    - **Variant 3: UCB1 Agent**
      - **Description:** Implements the classic UCB1 algorithm based on the average reward plus an exploration bonus.
 
-3. **Risk-Adjusted Successive Elimination Agent (File 3)**
+3. **Risk-Adjusted Successive Elimination Agent**
    - **Description:** Uses a more sophisticated approach by computing a risk-adjusted reward (ratio of expected reward to risk) and eliminates arms that perform poorly. This agent progressively removes suboptimal strategies using confidence bounds.
